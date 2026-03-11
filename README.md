@@ -41,7 +41,6 @@ The project focuses on:
 | --------------------- | ---------- | -------------------- |
 | Liquidity Pool        | 80%        | Trading liquidity    |
 | Marketing & Community | 10%        | Growth and promotion |
-| Team                  | 5%         | Development          |
 | Airdrops & Rewards    | 5%         | Community incentives |
 
 ---
