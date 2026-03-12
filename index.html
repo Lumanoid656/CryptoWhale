@@ -386,15 +386,63 @@ box-shadow:0 0 20px rgba(0,0,0,.4);
 
 <section>
 
-<h2>🔥 Deflationary Burn</h2>
+<section id="burn">
 
-<p>Every wave burns supply.</p>
+<h2>Token Burn Tracker 🔥</h2>
 
-<ul style="list-style:none;padding:0;">
-<li>1% burn on buys</li>
-<li>2% burn on sells</li>
-<li>Community burn events</li>
-</ul>
+<p style="max-width:700px;margin:auto;">
+Crypto Whale periodically removes tokens from circulation through
+community burn events and milestone achievements. Burned tokens are
+permanently removed from supply to strengthen the long-term ecosystem.
+</p>
+
+<div class="burn-container">
+
+<div class="burn-card">
+<h3>Total Supply</h3>
+<p>1,000,000,000 WHALE</p>
+</div>
+
+<div class="burn-card">
+<h3>Total Burned</h3>
+<p id="burned">0 WHALE</p>
+</div>
+
+<div class="burn-card">
+<h3>Circulating Supply</h3>
+<p>1,000,000,000 WHALE</p>
+</div>
+
+</div>
+
+<br>
+
+<a class="button" href="https://solscan.io/token/6FsDwTiG7y2jXYTbtvCSu1kZpwEKfYae4PiYwHEySzrM" target="_blank">
+View Token on Solscan
+</a>
+
+</section>
+
+<style>
+
+.burn-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+margin-top:20px;
+}
+
+.burn-card{
+background:#0f172a;
+padding:25px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+</style>
 
 </section>
 
@@ -448,6 +496,7 @@ alert("Contract address copied!");
 
 </body>
 </html>
+
 
 
 
