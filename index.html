@@ -102,13 +102,14 @@ left:-100px;
 animation-delay:16s;
 }
 
-.floating-coins img:nth-child(4){
-top:85%;
-left:-100px;
-animation-delay:24s;
+.floating-coins img{
+position:fixed;
+width:60px;
+opacity:0.35;
+animation:coinFloat 30s linear infinite;
+pointer-events:none;
+filter: drop-shadow(0 0 8px rgba(0,234,255,0.6));
 }
-
-  filter: drop-shadow(0 0 8px rgba(0,234,255,0.6));
 body{
 font-family:Arial;
 background:#070b1a;
