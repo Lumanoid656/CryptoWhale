@@ -58,7 +58,22 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 }
+.whale-logo{
+width:260px;
+margin-top:30px;
+animation:floatWhale 6s ease-in-out infinite;
+filter:drop-shadow(0 0 25px rgba(0,234,255,0.5));
+}
 
+@keyframes floatWhale{
+
+0%{transform:translateY(0px);}
+
+50%{transform:translateY(-20px);}
+
+100%{transform:translateY(0px);}
+
+}
 body{
 font-family:Arial;
 background:#070b1a;
@@ -275,7 +290,7 @@ text-decoration:none;
 <section class="hero">
 
 <h1>Ride The Whale</h1>
-
+<img src="images/cryptowhale.png" class="whale-logo">
 <p>
 
 CryptoWhale is a Solana meme coin building the foundation for the
