@@ -65,13 +65,15 @@ animation:floatWhale 6s ease-in-out infinite;
 filter:drop-shadow(0 0 25px rgba(0,234,255,0.5));
 }
 
-@keyframes floatWhale{
+@keyframes coinFloat{
 
-0%{transform:translateY(0px);}
+0%{
+transform:translateX(0) rotate(0deg);
+}
 
-50%{transform:translateY(-20px);}
-
-100%{transform:translateY(0px);}
+100%{
+transform:translateX(120vw) rotate(360deg);
+}
 
 }
   .floating-coins img{
