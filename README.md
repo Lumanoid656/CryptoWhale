@@ -83,7 +83,7 @@ The full project whitepaper is available here:
 
 Visit the official website:
 
-`https://your-site-url.com`
+[(https://cryptowhalecoin.com/)
 
 ---
 
