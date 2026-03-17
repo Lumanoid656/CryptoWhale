@@ -1,500 +1,304 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-<a class="button" href="cryptowhale_whitepaper.pdf" target="_blank">
-Read Whitepaper
-</a>
-</a>
-<a 
-</a>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Crypto Whale ($WHALE)</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>CryptoWhale</title>
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Poppins,sans-serif;
-color:white;
-background:#020617;
+padding:0;
+box-sizing:border-box;
 }
 
-/* HERO */
+body{
+font-family:Arial;
+background:#070b1a;
+color:white;
+}
+
+header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#050914;
+border-bottom:1px solid #0ff;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#00eaff;
+}
+
+nav a{
+margin-left:25px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00eaff;
+}
 
 .hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
+
+padding:140px 20px;
 text-align:center;
-position:relative;
-background:url("coin.png") center/cover no-repeat;
-}
-
-/* DARK OVERLAY */
-
-.hero::after{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.7);
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-}
-
-/* WHALE ANIMATION */
-
-.whale{
-font-size:150px;
-color:#1e40af;
-position:absolute;
-bottom:20%;
-animation:swim 18s linear infinite;
-}
-
-@keyframes swim{
-
-0%{left:-200px;}
-
-100%{left:110%;}
-
+background:radial-gradient(circle at top,#0a1638,#050914);
 }
 
 .hero h1{
-font-size:70px;
-margin:10px 0;
+
+font-size:56px;
+color:#00eaff;
+text-shadow:0 0 20px #00eaff;
 }
 
 .hero p{
-font-size:22px;
-}
 
-/* BUTTON */
+margin-top:20px;
+font-size:20px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+}
 
 .button{
-background:#00c2ff;
-padding:14px 26px;
-border-radius:10px;
-text-decoration:none;
-color:white;
-margin:10px;
+
 display:inline-block;
-font-weight:600;
+margin-top:30px;
+padding:15px 30px;
+background:#00eaff;
+color:black;
+font-weight:bold;
+border-radius:8px;
+text-decoration:none;
 }
 
-/* SECTIONS */
+.section{
 
-section{
-max-width:1000px;
-margin:auto;
-padding:80px 20px;
+padding:80px 10%;
 text-align:center;
 }
 
-h2{
+.section h2{
+
 font-size:36px;
-margin-bottom:30px;
+margin-bottom:40px;
+color:#00eaff;
 }
 
-/* TOKENOMICS */
+.grid{
 
-.tokenomics{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 }
 
 .card{
-background:#0f172a;
+
+background:#0d1530;
 padding:30px;
-border-radius:14px;
+border-radius:12px;
+border:1px solid #00eaff30;
 }
 
-/* CONTRACT */
+.card h3{
 
-.contract{
-background:#0f172a;
-padding:30px;
-border-radius:14px;
+margin-bottom:10px;
 }
 
-.address{
-background:#020617;
-padding:12px;
-border-radius:8px;
-font-family:monospace;
-display:inline-block;
+.tokenomics{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
 }
 
-button{
-background:#00c2ff;
-border:none;
-padding:10px 16px;
-border-radius:8px;
-cursor:pointer;
-margin-left:10px;
-color:white;
+.token-box{
+
+background:#0d1530;
+padding:25px;
+border-radius:10px;
+width:200px;
 }
 
-/* LINKS */
+footer{
 
-.links a{
-display:inline-block;
-margin:10px;
-padding:10px 18px;
-background:#1f2937;
-border-radius:8px;
-color:white;
+padding:40px;
+text-align:center;
+background:#050914;
+margin-top:60px;
+}
+
+.socials a{
+
+margin:0 10px;
+color:#00eaff;
 text-decoration:none;
 }
 
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:40px;
-background:#020617;
-opacity:.7;
-}
-
 </style>
-
 </head>
 
 <body>
 
-<header class="hero">
+<header>
 
-<div class="whale">🐋</div>
+<div class="logo">🐋 CryptoWhale</div>
 
-<div class="hero-content">
+<nav>
 
-<h1>Crypto Whale</h1>
+<a href="#about">About</a>
+<a href="#ecosystem">Ecosystem</a>
+<a href="#tokenomics">Tokenomics</a>
+<a href="#roadmap">Roadmap</a>
+<a href="#buy">Buy</a>
 
-<p>Ride the Wave of the Whales</p>
-
-<a class="button" href="https://x.com/Luma1860434">Follow on X</a>
-
-</div>
+</nav>
 
 </header>
 
-<section>
+<section class="hero">
 
-<h2>About</h2>
+<h1>Ride The Whale</h1>
 
 <p>
-<section id="about">
 
-<h2>About Crypto Whale</h2>
+CryptoWhale is a Solana meme coin building the foundation for the
+Whale Culture Ecosystem.
 
-<p style="max-width:750px;margin:auto;">
-Crypto Whale is a community-driven meme token on the Solana blockchain inspired by the powerful “whales” that move crypto markets.
-The project focuses on building a strong community, transparent tokenomics, and a fun brand around crypto culture.
-With a fresh relaunch and improved security, Crypto Whale aims to grow organically while rewarding early supporters.
-Ride the wave. Crypto Whale ($WHALE) is a community-driven meme token built on the Solana
-blockchain. Inspired by the powerful “whales” that influence cryptocurrency
-markets, the project represents the waves created when large movements ripple
-through the digital asset ecosystem.
 </p>
 
-<p style="max-width:750px;margin:auto;margin-top:15px;">
-The goal of Crypto Whale is to build a recognizable and engaging community
-around a fun but meaningful concept within crypto culture. By combining meme
-energy with transparent tokenomics and decentralized trading, the project
-aims to create a digital asset that people can rally around while exploring
-the broader world of blockchain technology.
-</p>
+<a class="button" href="#buy">Buy CryptoWhale</a>
 
-<p style="max-width:750px;margin:auto;margin-top:15px;">
-Built on the Solana network, Crypto Whale benefits from fast transaction
-speeds and low fees, making it accessible to users across the globe.
-Liquidity pools on decentralized exchanges allow the token to be traded
-freely while maintaining the decentralized nature that defines the crypto
-space.
+</section>
+
+<section id="about" class="section">
+
+<h2>About CryptoWhale</h2>
+
+<p>
+
+CryptoWhale represents the power of the community and the culture of
+crypto whales that move markets.
+
+Built on Solana for speed and low fees.
+
 </p>
 
 </section>
 
+<section id="ecosystem" class="section">
 
-<section id="why">
+<h2>Whale Culture Ecosystem</h2>
 
-<h2>Why Crypto Whale</h2>
+<div class="grid">
 
-<div class="why-container">
-
-<div class="why-card">
-<h3>Community Driven</h3>
-<p>
-Crypto Whale is built around the power of community. Holders and supporters
-help shape the growth of the project through participation, social engagement,
-and shared momentum across the crypto ecosystem.
-</p>
+<div class="card">
+<h3>CryptoWhale</h3>
+<p>Main ecosystem meme coin.</p>
 </div>
 
-<div class="why-card">
-<h3>Built on Solana</h3>
-<p>
-By launching on the Solana blockchain, Crypto Whale benefits from fast
-transactions and low network fees. This makes trading accessible to a
-global audience while supporting decentralized finance.
-</p>
+<div class="card">
+<h3>Vinny Coin</h3>
+<p>Future ecosystem expansion token.</p>
 </div>
 
-<div class="why-card">
-<h3>Meme Culture</h3>
-<p>
-Crypto culture thrives on creativity and humor. Crypto Whale embraces meme
-culture as a powerful way to grow awareness while keeping the community
-engaged and entertained.
-</p>
-</div>
-
-<div class="why-card">
-<h3>Future Expansion</h3>
-<p>
-The project aims to expand beyond a simple meme token through community
-initiatives, digital collectibles, and partnerships that strengthen the
-Crypto Whale ecosystem.
-</p>
+<div class="card">
+<h3>NFT Collection</h3>
+<p>Whale themed digital collectibles.</p>
 </div>
 
 </div>
 
 </section>
 
-
-<section id="buy">
-
-<h2>How to Buy $WHALE</h2>
-
-<div class="buy-container">
-
-<div class="buy-step">
-<h3>1. Create a Wallet</h3>
-<p>Download a Solana wallet such as Phantom or Solflare and create your wallet.</p>
-</div>
-
-<div class="buy-step">
-<h3>2. Get SOL</h3>
-<p>Purchase SOL from an exchange and send it to your wallet.</p>
-</div>
-
-<div class="buy-step">
-<h3>3. Connect to Raydium</h3>
-<p>Visit Raydium and connect your wallet to begin trading.</p>
-</div>
-
-<div class="buy-step">
-<h3>4. Swap for $WHALE</h3>
-<p>Swap SOL for WHALE and confirm the transaction in your wallet.</p>
-</div>
-
-</div>
-
-<br>
-
-<a class="button" href="https://raydium.io/swap/" target="_blank">
-Buy $WHALE on Raydium
-</a>
-
-</section>
-
-
-<style>
-
-.why-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-max-width:1000px;
-margin:auto;
-}
-
-.why-card{
-background:#0f172a;
-padding:25px;
-border-radius:12px;
-box-shadow:0 0 20px rgba(0,0,0,.4);
-}
-
-.buy-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-max-width:1000px;
-margin:auto;
-}
-
-.buy-step{
-background:#0f172a;
-padding:25px;
-border-radius:12px;
-box-shadow:0 0 20px rgba(0,0,0,.4);
-}
-
-</style>
-</p>
-
-</section>
-
-<section>
+<section id="tokenomics" class="section">
 
 <h2>Tokenomics</h2>
 
 <div class="tokenomics">
 
-<div class="card">
+<div class="token-box">
 <h3>Total Supply</h3>
-<p>1,000,000,000</p>
+<p>1B</p>
 </div>
 
-<div class="card">
+<div class="token-box">
 <h3>Liquidity</h3>
-<p>80%</p>
+<p>Locked</p>
 </div>
 
-<div class="card">
-<h3>Marketing</h3>
-<p>10%</p>
-</div>
-
-<div class="card">
-<h3>Team</h3>
-<p>5%</p>
-</div>
-
-<div class="card">
-<h3>Airdrops</h3>
-<p>5%</p>
+<div class="token-box">
+<h3>Community</h3>
+<p>Fair Launch</p>
 </div>
 
 </div>
 
 </section>
 
-<section>
+<section id="roadmap" class="section">
 
-<section id="burn">
+<h2>Roadmap</h2>
 
-<h2>Token Burn Tracker 🔥</h2>
+<p>
 
-<p style="max-width:700px;margin:auto;">
-Crypto Whale periodically removes tokens from circulation through
-community burn events and milestone achievements. Burned tokens are
-permanently removed from supply to strengthen the long-term ecosystem.
+Phase 1 — Launch CryptoWhale  
+<br><br>
+
+Phase 2 — Grow Community  
+<br><br>
+
+Phase 3 — Launch Vinny Coin  
+<br><br>
+
+Phase 4 — NFT Collection  
+<br><br>
+
+Phase 5 — Expand Whale Culture Ecosystem
+
 </p>
 
-<div class="burn-container">
-
-<div class="burn-card">
-<h3>Total Supply</h3>
-<p>1,000,000,000 WHALE</p>
-</div>
-
-<div class="burn-card">
-<h3>Total Burned</h3>
-<p id="burned">0 WHALE</p>
-</div>
-
-<div class="burn-card">
-<h3>Circulating Supply</h3>
-<p>1,000,000,000 WHALE</p>
-</div>
-
-</div>
-
-<br>
-
-<a class="button" href="https://solscan.io/token/AwDvLn5CJkEzPm3ugP5pxEnHMbPu8joRek7GbqTCLuMA" target="_blank">
-View Token on Solscan
-</a>
-
 </section>
 
-<style>
+<section id="buy" class="section">
 
-.burn-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-max-width:900px;
-margin:auto;
-margin-top:20px;
-}
+<h2>Buy CryptoWhale</h2>
 
-.burn-card{
-background:#0f172a;
-padding:25px;
-border-radius:12px;
-text-align:center;
-box-shadow:0 0 20px rgba(0,0,0,.4);
-}
+<p>
 
-</style>
+Trade CryptoWhale on Solana DEX.
 
-</section>
+</p>
 
-<section>
-
-<h2>Contract Address</h2>
-
-<div class="contract">
-
-<div class="address" id="contractAddress">
-AwDvLn5CJkEzPm3ugP5pxEnHMbPu8joRek7GbqTCLuMA
-</div>
-
-<button onclick="copyAddress()">Copy</button>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Community</h2>
-
-<div class="links">
-
-<a href="https://x.com/Luma1860434">X Account</a>
-
-</div>
+<a class="button">View Dexscreener</a>
 
 </section>
 
 <footer>
 
-<p>© 2026 Crypto Whale ($WHALE)</p>
+<div class="socials">
+
+<a href="#">X</a>
+<a href="#">Telegram</a>
+<a href="#">Dexscreener</a>
+
+</div>
+
+<p style="margin-top:20px;">© 2026 CryptoWhale</p>
 
 </footer>
-
-<script>
-
-function copyAddress(){
-
-const text=document.getElementById("contractAddress").innerText;
-
-navigator.clipboard.writeText(text);
-
-alert("Contract address copied!");
-
-}
-
-</script>
 
 </body>
 </html>
