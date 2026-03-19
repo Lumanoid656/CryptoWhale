@@ -76,12 +76,11 @@ transform:translateX(120vw) rotate(360deg);
 }
 
 }
-  .floating-coins img{
-position:fixed;
-width:60px;
-opacity:0.35;
-animation:coinFloat 30s linear infinite;
-pointer-events:none;
+.floating-coins img:nth-child(4){
+top:85%;
+left:-100px;
+animation-delay:24s;
+}
 }
 
 .floating-coins img:nth-child(1){
@@ -161,7 +160,18 @@ opacity:0;
 }
 
 }
-
+.contract-box{
+background:#0d1530;
+border:1px solid #00eaff40;
+padding:15px;
+border-radius:8px;
+word-break:break-all;
+max-width:500px;
+margin:20px auto;
+font-family:monospace;
+color:#00eaff;
+box-shadow:0 0 10px rgba(0,234,255,0.3);
+}
 header{
 
 display:flex;
@@ -490,26 +500,37 @@ Phase 5 — Expand Whale Culture Ecosystem
 
 <p>Trade CryptoWhale on Solana DEX.</p>
 
-<p style="word-break:break-all;color:#00eaff;">
+<div class="contract-box">
 AwDvLn5CJkEzPm3ugP5pxEnHMbPu8joRek7GbqTCLuMA
-</p>
+</div>
 
 <button onclick="copyCA()" class="button">Copy Contract</button>
 
 <br><br>
 
-<a class="button" href="https://raydium.io/swap/?inputMint=sol&outputMint=AwDvLn5CJkEzPm3ugP5pxEnHMbPu8joRek7GbqTCLuMA" target="_blank">
+<a class="button" 
+href="https://raydium.io/swap/?inputMint=sol&outputMint=AwDvLn5CJkEzPm3ugP5pxEnHMbPu8joRek7GbqTCLuMA" 
+target="_blank">
 Buy on Raydium
 </a>
 
 <br><br>
 
-<a class="button" href="https://dexscreener.com/solana/AwDvLn5CJkEzPm3ugP5pxEnHMbPu8joRek7GbqTCLuMA" target="_blank">
-View Chart
+<a class="button"
+href="https://dexscreener.com/solana/AwDvLn5CJkEzPm3ugP5pxEnHMbPu8joRek7GbqTCLuMA"
+target="_blank">
+View on Dexscreener
+</a>
+
+<br><br>
+
+<a class="button"
+href="https://www.geckoterminal.com/solana/search?query=AwDvLn5CJkEzPm3ugP5pxEnHMbPu8joRek7GbqTCLuMA"
+target="_blank">
+View on GeckoTerminal
 </a>
 
 </section>
-<section class="section">
 
 <h2>Live Chart</h2>
 
