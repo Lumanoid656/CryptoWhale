@@ -200,6 +200,28 @@ margin-bottom:10px;
 .stat p{
 font-size:18px;
 }
+.whale-swim{
+position:absolute;
+left:-300px;
+top:40%;
+width:300px;
+opacity:0.08;
+animation:swimWhale 60s linear infinite;
+pointer-events:none;
+}
+
+@keyframes swimWhale{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(140vw);
+}
+
+}
+  
 header{
 
 display:flex;
@@ -228,10 +250,11 @@ color:#00eaff;
 }
 
 .hero{
-
 padding:140px 20px;
 text-align:center;
 background:radial-gradient(circle at top,#0a1638,#050914);
+position:relative;
+overflow:hidden;
 }
 
 .hero h1{
@@ -363,7 +386,9 @@ text-decoration:none;
 </header>
 
 <section class="hero">
-
+  
+<img src="cryptowhale.png" class="whale-swim">
+  
 <h1>Ride The Whale</h1>
 <img src="cryptowhale.png" class="whale-logo">
 
