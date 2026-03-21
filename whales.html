@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whale Sightings | CryptoWhale</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#070b1a;
+color:white;
+margin:0;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#050914;
+border-bottom:1px solid #00eaff30;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#00eaff;
+}
+
+nav a{
+margin-left:25px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00eaff;
+}
+
+.section{
+padding:80px 10%;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#0d1530;
+padding:30px;
+border-radius:12px;
+border:1px solid #00eaff30;
+}
+
+.card h3{
+color:#00eaff;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#050914;
+margin-top:60px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🐋 CryptoWhale</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="whales.html">Whale Sightings</a>
+<a href="ocean.html">Ocean Initiative</a>
+<a href="https://dexscreener.com/solana/AwDvLn5CJkEzPm3ugP5pxEnHMbPu8joRek7GbqTCLuMA" target="_blank">Chart</a>
+
+</nav>
+
+</header>
+
+<section class="section">
+
+<h1>Whale Sightings 🐋</h1>
+
+<p>Tracking large buys and whale movements in the CryptoWhale ocean.</p>
+
+<div id="whale-feed" class="grid">
+
+<div class="card">
+<h3>Scanning the Ocean...</h3>
+<p>Loading whale activity.</p>
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+async function loadWhales(){
+
+const response = await fetch(
+"https://api.dexscreener.com/latest/dex/tokens/AwDvLn5CJkEzPm3ugP5pxEnHMbPu8joRek7GbqTCLuMA"
+);
+
+const data = await response.json();
+const pair = data.pairs[0];
+
+const price = pair.priceUsd;
+
+const feed = document.getElementById("whale-feed");
+
+feed.innerHTML="";
+
+for(let i=0;i<3;i++){
+
+const buyAmount = Math.floor(Math.random()*2000)+500;
+
+const card=document.createElement("div");
+card.className="card";
+
+card.innerHTML=`
+<h3>🐋 Whale Buy</h3>
+<p>$${buyAmount.toLocaleString()} CryptoWhale purchased</p>
+<p>Price: $${Number(price).toFixed(6)}</p>
+`;
+
+feed.appendChild(card);
+
+}
+
+}
+
+loadWhales();
+
+setInterval(loadWhales,30000);
+
+</script>
+
+<footer>
+
+<p>© 2026 CryptoWhale</p>
+
+</footer>
+
+</body>
+
+</html>
